@@ -1,0 +1,17 @@
+{% extends 'gabarit.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> fiche {{Films.nom}}</title>
+</head>
+{% block content %}
+<h1> {{Films.nom}} </h1>
+<br>
+<p> Ce livre est écrit par {{Films.realisateur}} et est paru le {{Films.date_de_sortie}}. </p>
+<br>
+<h3> résumé </h3>
+<br>
+<p> {{Films.resume}}</p>
+<br>
+{% endblock %}

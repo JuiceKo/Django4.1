@@ -1,0 +1,12 @@
+{% extends 'gabarit.html' %}
+{% block content %}
+<body>
+ <ol>
+        {% for l in liste %}
+            <li> {{l}} date de sortie {{l.date_de_sortie|date:"d/m/Y"}} <a href="affiche/{{l.id}}"> afficher les détails </a> <a href="delete/{{l.id}}"> effacer </a>
+                <a href="update/{{l.id}}"> mise à jour </a></li>
+            <br>
+        {%endfor%}
+    </ol>
+<a href="ajout/"> ajouter un film </a>
+{% endblock %}
